@@ -7,7 +7,7 @@
 
 	services.openssh.enable = true;
 
-	users.users.ocbwoy3 = {
+	users.users.clientruncontext = {
 		initialPassword = "thisisapassword42069!"; # not the type passwords i use
 		isNormalUser = true;
 		extraGroups = [ "wheel" "networkmanager" ];
