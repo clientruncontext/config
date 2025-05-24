@@ -58,7 +58,7 @@
 	};
 
 	programs.virt-manager.enable = true;
-	# user.groups.libvirtd.members = [ "ocbwoy3" ];
+	# user.groups.libvirtd.members = [ "clientruncontext" ];
 	virtualisation.libvirtd.enable = true;
 	# virtualisation.waydroid.enable = true;
 	virtualisation.spiceUSBRedirection.enable = true;
@@ -157,7 +157,6 @@
 	fileSystems = {
 		"/".options = [ "compress=zstd" ];
 		"/home".options = [ "compress=zstd" ];
-		"/nix".options = [ "compress=zstd" "noatime" ];
 	};
 
 	services.btrfs.autoScrub = {
@@ -167,10 +166,10 @@
 	};
 
 	# CHANGE YOUR NAME IN HOME MANAGER!
-	# BETTER YET, DON'T TOUCH THIS. AT ALL.
+	# ~~BETTER YET, DON'T TOUCH THIS. AT ALL.~~ DO touch this
 
-	main-user.userName = "ocbwoy3";
-	main-user.realName = "OCbwoy3";
+	main-user.userName = "clientruncontext";
+	main-user.realName = "clientruncontext";
 
 	services.fstrim.enable = true;
 	systemd.services.fstrim.enable = false;
@@ -192,7 +191,7 @@
 		accent = "blue";
 	};
 
-	home-manager.users.ocbwoy3 = { config, pkgs, ... }: {
+	home-manager.users.clientruncontext = { config, pkgs, ... }: {
 
 		imports = [
 			inputs.catppuccin.homeModules.catppuccin
@@ -206,61 +205,61 @@
 		};
 
 		home.file.".config/fastfetch" = {
-			source = config.lib.file.mkOutOfStoreSymlink "/home/ocbwoy3/config/config/fastfetch";
+			source = config.lib.file.mkOutOfStoreSymlink "/home/clientruncontext/config/config/fastfetch";
 			recursive = true;
 		};
 
 		home.file.".config/dunst" = {
-			source = config.lib.file.mkOutOfStoreSymlink "/home/ocbwoy3/config/config/dunst";
+			source = config.lib.file.mkOutOfStoreSymlink "/home/clientruncontext/config/config/dunst";
 			recursive = true;
 		};
 
 		home.file.".config/gtk-3.0" = {
-			source = config.lib.file.mkOutOfStoreSymlink "/home/ocbwoy3/config/config/gtk-3.0";
+			source = config.lib.file.mkOutOfStoreSymlink "/home/clientruncontext/config/config/gtk-3.0";
 			recursive = true;
 		};
 
 		home.file.".config/hypr" = {
-			source = config.lib.file.mkOutOfStoreSymlink "/home/ocbwoy3/config/config/hypr";
+			source = config.lib.file.mkOutOfStoreSymlink "/home/clientruncontext/config/config/hypr";
 			recursive = true;
 		};
 
 		home.file.".config/xdg-desktop-portal" = {
-			source = config.lib.file.mkOutOfStoreSymlink "/home/ocbwoy3/config/config/xdg-desktop-portal";
+			source = config.lib.file.mkOutOfStoreSymlink "/home/clientruncontext/config/config/xdg-desktop-portal";
 			recursive = true;
 		};
 
 		home.file.".local/share/themes" = {
-			source = config.lib.file.mkOutOfStoreSymlink "/home/ocbwoy3/config/config/themes";
+			source = config.lib.file.mkOutOfStoreSymlink "/home/clientruncontext/config/config/themes";
 			recursive = true;
 		};
 
 		home.file.".themes" = {
-			source = config.lib.file.mkOutOfStoreSymlink "/home/ocbwoy3/config/config/themes";
+			source = config.lib.file.mkOutOfStoreSymlink "/home/clientruncontext/config/config/themes";
 			recursive = true;
 		};
 
 		home.file.".local/share/fonts/DotfilesFont.otf" = {
-			source = config.lib.file.mkOutOfStoreSymlink "/home/ocbwoy3/config/config/dotfile_deps/DotfilesFont.otf";
+			source = config.lib.file.mkOutOfStoreSymlink "/home/clientruncontext/config/config/dotfile_deps/DotfilesFont.otf";
 		};
 
 		home.file.".config/ghostty" = {
-			source = config.lib.file.mkOutOfStoreSymlink "/home/ocbwoy3/config/config/ghostty";
+			source = config.lib.file.mkOutOfStoreSymlink "/home/clientruncontext/config/config/ghostty";
 			recursive = true;
 		};
 
 		home.file.".config/qt5ct" = {
-			source = config.lib.file.mkOutOfStoreSymlink "/home/ocbwoy3/config/config/qt5ct";
+			source = config.lib.file.mkOutOfStoreSymlink "/home/clientruncontext/config/config/qt5ct";
 			recursive = true;
 		};
 
 		home.file.".config/wofi" = {
-			source = config.lib.file.mkOutOfStoreSymlink "/home/ocbwoy3/config/config/wofi";
+			source = config.lib.file.mkOutOfStoreSymlink "/home/clientruncontext/config/config/wofi";
 			recursive = true;
 		};
 
 
-		# xdg.configHome = "/home/ocbwoy3/config/config";
+		# xdg.configHome = "/home/clientruncontext/config/config";
 
 		services.mpris-proxy.enable = true;
 
@@ -292,8 +291,8 @@
 
 		programs.git = {
 			enable = true;
-			userName  = "OCbwoy3";
-			userEmail = "ocbwoy3@ocbwoy3.dev";
+			userName  = "clientruncontext";
+			userEmail = "clientruncontext@clientruncontext.dev";
 		};
 
 		programs.obs-studio = {
