@@ -13,6 +13,8 @@
   boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = [ ];
 
+  # REMEMBER TO REPLACE THE UUIDS.
+
   fileSystems."/" =
     { device = "/dev/disk/by-uuid/5ca305a1-d705-4c99-913c-a2d1c3447282";
       fsType = "btrfs";
@@ -23,12 +25,6 @@
     { device = "/dev/disk/by-uuid/5ca305a1-d705-4c99-913c-a2d1c3447282";
       fsType = "btrfs";
       options = [ "subvol=home" ];
-    };
-
-  fileSystems."/nix" =
-    { device = "/dev/disk/by-uuid/5ca305a1-d705-4c99-913c-a2d1c3447282";
-      fsType = "btrfs";
-      options = [ "subvol=nix" "noatime" ];
     };
 
   fileSystems."/boot" =
