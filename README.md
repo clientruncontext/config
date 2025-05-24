@@ -7,12 +7,17 @@ i use nix too, btw :D
 
 ```
 /dev/nvme0n1p1 - 1G fat32 fmask=0022 dmask=0022 vfat
-            mounts to /boot
+                 mounts to /boot
 
 /dev/nvme0n1p5 - 100% btrfs
                  subvol root -> /
                  subvol home -> /home
                  subvol root -> /root
+
+# or in simpler steps:
+# (dont do this if you are dualbooting) create the EFI partition which is mounted to boot, fmask is 0022, dmask is 0022 and the filesystem is vfat or fat32
+# create another partition that takes up all the unallocated storage, has btrfs as its filesystem (for the nixos install)
+# create subvolumes (for /dev/nvme0n1p5) root and home, where root is mounted to `/` and home is mounted to `/home`
 ```
 
 2. create user named 'clientruncontext'
@@ -55,4 +60,6 @@ nameserver 1.1.1.1
    
 9. copy asset overlay content folder to `~/.var/app/org.vinegarhq.Sober/data/sober/asset_overlay`
 
-10. done
+10. do any additional configurations
+
+11. done
