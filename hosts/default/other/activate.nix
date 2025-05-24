@@ -12,14 +12,14 @@
 		};
 	};
 
-	system.name = "ocbwoy3";
-	system.nixos.label = "ocbwoy3-config-main";
-	boot.loader.grub.configurationName = lib.mkDefault "ocbwoy3/config:main";
+	system.name = "clientruncontext";
+	system.nixos.label = "clientruncontext-config-main";
+	boot.loader.grub.configurationName = lib.mkDefault "clientruncontext/config:main";
 
 	system.activationScripts.installRoblox = {
 		text = ''
 			# install roblox manually from flathub 😍
-			if [ ! -d "/home/ocbwoy3/.var/app/org.vinegarhq.Sober" ]; then
+			if [ ! -d "/home/clientruncontext/.var/app/org.vinegarhq.Sober" ]; then
 				echo "Please Install Roblox"
 				# echo "flathub.org/apps/org.vinegarhq.Sober"
 				echo "$ flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo"
