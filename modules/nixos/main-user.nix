@@ -3,13 +3,13 @@
 {
 	options = {
 		main-user.userName = lib.mkOption {
-			default = "ocbwoy3";
+			default = "clientruncontext";
 			description = ''
 				Username
 			'';
 		};
 		main-user.realName = lib.mkOption {
-			default = "OCbwoy3";
+			default = "clientruncontext";
 			description = ''
 				User's Name
 			'';
