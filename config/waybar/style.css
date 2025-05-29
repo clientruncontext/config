@@ -29,7 +29,7 @@ window#waybar {
 	background-color: #1e1e2e;
 	padding-left: 5px;
 	padding-right: 5px;
-	color: #b4befe;
+	color: #d9023c;
 }
 
 #custom-regretevator_state {
@@ -43,11 +43,11 @@ window#waybar {
 
 #clock {
 	background-color: #1e1e2e;
-	color: #b4befe;
+	color: #d9023c;
 }
 
 #workspaces button {
-	color: #b4befe;
+	color: #d9023c;
 }
 
 #workspaces button.active {
@@ -58,14 +58,14 @@ window#waybar {
 #tray {
 	padding: 0px 5px 0px 5px;
 	margin: 0px 0px 0px 0px;
-	color: #b4befe;
+	color: #d9023c;
 	background-color: #1e1e2e;
 }
 
 #tray menu {
 	padding: 5px 5px 5px 5px;
 	margin: 5px 5px 5px 5px;
-	color: #b4befe;
+	color: #d9023c;
 	background-color: rgba(30, 30, 46, 0.9);
 	border: 1px solid #89b4fa;
 	border-radius: 13px;
@@ -75,7 +75,7 @@ window#waybar {
 	padding: 2px 2px 2px 2px;
 	margin: 2px 0px 2px 0px;
 	border-radius: 8px;
-	color: #b4befe;
+	color: #d9023c;
 	background-color: rgba(30, 30, 46, 0);
 	border: 1px solid #89b4fa;
 }
