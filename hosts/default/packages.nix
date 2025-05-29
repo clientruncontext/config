@@ -42,6 +42,8 @@
 		libxkbcommon
 		ffmpeg-full
 		gnupg
+		btop
+		unimatrix
 		nix-direnv
 		htop
 		nixpkgs-fmt
