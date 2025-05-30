@@ -195,6 +195,7 @@
 
 		imports = [
 			inputs.catppuccin.homeModules.catppuccin
+			inputs.zen-browser.homeModules.beta
 		];
 
 		catppuccin = {
@@ -202,6 +203,15 @@
 			flavor = "mocha";
 			accent = "blue";
 			gtk.enable = true;
+		};
+
+		programs.zen-browser = {
+			enable = true;
+			nativeMessagingHosts = [pkgs.firefoxpwa];
+			policies = {
+				DisableAppUpdate = true;
+				DisableTelemetry = true;
+			};
 		};
 
 		home.file.".config/fastfetch" = {
