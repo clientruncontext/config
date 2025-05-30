@@ -44,7 +44,6 @@
 			"Sober": "Roblox",
 			"vinegar": "Vinegar",
 			"RobloxStudio": "Roblox Studio",
-			// "Minecraft NeoForge%*? 1%.2[0-9](%.[0-9]+)?": "Minecraft",
 			"gemini.google.com_/app": "Gemini",
 			"PORTAL 2 - (OpenGL|Vulkan)": "Portal 2",
 			"HALF-LIFE 2 - (OpenGL|Vulkan)": "Half-Life 2",
@@ -53,6 +52,17 @@
 			"Minecraft NeoForge%*(.+)": "Minecraft"
 		},
 		"separate-outputs": false
+	},
+
+	"battery": {
+		"interval": 1,
+		"states": {
+			"warning": 25,
+			"critical": 10
+		},
+		"format": "{capacity}% {icon}",
+		"format-icons": [ "", "", "", "", "" ],
+		"max-length": 25
 	},
 
 	"hyprland/workspaces": {
@@ -77,8 +87,8 @@
 	},
 
 	"clock": {
-		"timezone": "Europe/Riga",
-		"locale": "lv_LV.UTF-8",
+		"timezone": "Europe/Berlin",
+		"locale": "en_US.UTF-8",
 		"format": "{:%H:%M}",
 		"tooltip-format": "{:L%Y. gada %e. %B}",
 		"format-alt": "{:%H:%M:%S}",
